@@ -32,8 +32,8 @@ This will automatically add all the components from the Pravah UI library to you
 ```
 
 ## Available Components
-- <p-button>: A simple button component styled with Tailwind.
-- <p-card>: A card component with customizable content.
+- `<p-button>`: A simple button component styled with Tailwind.
+- `<p-card>`: A card component with customizable content.
 - More components coming soon...
 
 ## Development
