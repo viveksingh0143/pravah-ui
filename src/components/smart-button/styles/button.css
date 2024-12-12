@@ -1,0 +1,32 @@
+button.ui-smart-button {
+  @apply font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none;
+}
+.ui-smart-button--disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+/* Variant styles */
+.ui-smart-button--primary {
+  @apply text-white bg-blue-600 hover:bg-blue-700;
+}
+
+.ui-smart-button--secondary {
+  @apply text-white bg-gray-600 hover:bg-gray-700;
+}
+
+.ui-smart-button--outline {
+  @apply text-blue-600 border border-blue-600 hover:bg-blue-50;
+}
+
+/* Size styles */
+.ui-smart-button--small {
+  @apply text-xs px-3 py-2;
+}
+
+.ui-smart-button--medium {
+  @apply text-sm px-5 py-2.5;
+}
+
+.ui-smart-button--large {
+  @apply text-base px-6 py-3;
+}
