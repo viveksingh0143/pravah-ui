@@ -1,12 +1,17 @@
 {
   "name": "@viveksingh0143/pravah-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A collection of reusable UI components built with Lit and TailwindCSS.",
   "main": "dist/pravah-ui.umd.cjs",
   "module": "dist/pravah-ui.js",
   "types": "dist/pravah-ui.d.ts",
   "type": "module",
-  "keywords": ["lit", "web-components", "tailwindcss", "ui"],
+  "keywords": [
+    "lit",
+    "web-components",
+    "tailwindcss",
+    "ui"
+  ],
   "author": "Vivek Singh",
   "license": "MIT",
   "repository": {
