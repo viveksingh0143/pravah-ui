@@ -24,7 +24,9 @@
     "preview": "vite preview",
     "storybook": "npx storybook dev -p 6006",
     "build-storybook": "npx storybook build",
-    "test": "vitest"
+    "test": "vitest",
+    "prepublishOnly": "git tag v$(npm pkg get version | sed 's/\"//g')",
+    "postpublish": "git push origin v$(npm pkg get version | sed 's/\"//g')"
   },
   "dependencies": {
     "lit": "^3.2.1"
