@@ -5,6 +5,7 @@
   "main": "dist/pravah-ui.umd.cjs",
   "module": "dist/pravah-ui.js",
   "types": "dist/pravah-ui.d.ts",
+  "type": "module",
   "keywords": ["lit", "web-components", "tailwindcss", "ui"],
   "author": "Vivek Singh",
   "license": "MIT",
