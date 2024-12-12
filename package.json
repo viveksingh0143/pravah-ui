@@ -17,7 +17,7 @@
     "url": "https://github.com/viveksingh0143/pravah-ui/issues"
   },
   "homepage": "https://github.com/viveksingh0143/pravah-ui#readme",
-  "private": false,
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
