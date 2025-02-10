@@ -38,7 +38,7 @@ export class MyElement extends LitElement {
       </div>
       <slot></slot>
       <div class="card p-8">
-        <button @click=${this._onClick} part="button" class="rounded-lg border border-transparent px-3 py-2 text-base font-medium font-inherit bg-gray-800 text-white cursor-pointer transition-colors duration-300 hover:border-[#646cff] focus:outline focus:outline-4 focus:outline-webkit-focus-ring-color">
+        <button @click=${this._onClick} part="button" class="rounded-lg border border-transparent px-3 py-2 text-base font-medium font-inherit bg-gray-800 text-white cursor-pointer transition-colors duration-300 hover:border-[#646cff] focus:outline-4 focus:outline-webkit-focus-ring-color">
           count is ${this.count}
         </button>
       </div>
