@@ -2,4 +2,97 @@
 
 @theme {
   --font-sans: InterVariable, sans-serif;
+
+  /* Define colors */
+  --color-primary: #3A10E5;
+  --color-secondary: #585C6D;
+  --color-error: #DC2626;
+  --color-warning: #F59E0B;
+  --color-success: #10B981;
+  --color-info: #3B82F6;
+
+  /* Define border radius */
+  --rounded-sm: 4px;
+  --rounded-md: 6px;
+  --rounded-lg: 12px;
+  --rounded-circle: 50%;
+  --rounded-none: 0px;
+
+  /* Define spacing for button sizes */
+  --size-xs: 0.75rem;
+  --size-sm: 1rem;
+  --size-md: 1.5rem;
+  --size-lg: 2rem;
 }
+
+/* Apply button base styles */
+/* .btn {
+  @apply px-4 py-2 font-semibold transition-all duration-200;
+} */
+
+/* Button Variants */
+/* .btn.primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+.btn.secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+.btn.error {
+  background-color: var(--color-error);
+  color: white;
+}
+.btn.warning {
+  background-color: var(--color-warning);
+  color: white;
+}
+.btn.success {
+  background-color: var(--color-success);
+  color: white;
+}
+.btn.info {
+  background-color: var(--color-info);
+  color: white;
+} */
+
+/* Button Sizes */
+/* .btn.xs {
+  font-size: 12px;
+  padding: var(--size-xs);
+}
+.btn.sm {
+  font-size: 14px;
+  padding: var(--size-sm);
+}
+.btn.md {
+  font-size: 16px;
+  padding: var(--size-md);
+}
+.btn.lg {
+  font-size: 18px;
+  padding: var(--size-lg);
+} */
+
+/* Rounded Variants */
+/* .btn.rounded-sm {
+  border-radius: var(--rounded-sm);
+}
+.btn.rounded-md {
+  border-radius: var(--rounded-md);
+}
+.btn.rounded-lg {
+  border-radius: var(--rounded-lg);
+}
+.btn.rounded-circle {
+  border-radius: var(--rounded-circle);
+}
+.btn.rounded-none {
+  border-radius: var(--rounded-none);
+} */
+
+/* Disabled State */
+/* .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+} */
