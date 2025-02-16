@@ -1,17 +1,51 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full bg-gray-100">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Lit + TS</title>
-    <link rel="stylesheet" href="./src/index.css" />
-    <script type="module" src="/src/components/my-element/my-element.ts"></script>
+    <title>Pravah-UI</title>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="./src/styles/tailwind-compiled.css" />
+    <script type="module" src="/src/components/index.ts"></script>
   </head>
-  <body>
-    <my-element>
-      <h1>Vite + Lit</h1>
-    </my-element>
+  <body class="h-full">
+    <v-stacked-layout>
+      <v-navbar slot="navbar">
+        <img slot="logo" class="size-8" src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Company Description" />
+        <v-link href="/home" class="text-white hover:bg-secondary" aria-current="page">Home</v-link>
+        <v-link href="/products" class="text-white hover:bg-secondary">Product</v-link>
+        <v-dropdown label="User Information" class="rounded-md px-3 py-2 text-sm font-medium hover:bg-secondary">
+          <v-link role="menuitem">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
+          </v-link>
+        </v-dropdown>
+        
+        <v-link slot="right-navs" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden" aria-current="page">
+          <a href="/notifications">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">View notifications</span>
+            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+            </svg>
+          </a>
+        </v-link>
+        <v-dropdown slot="right-navs">
+          <div slot="btn">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">Open user menu</span>
+            <img class="size-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+          </div>
+          <v-link role="menuitem">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign Out</a>
+          </v-link>
+        </v-dropdown>
+      </v-navbar>
+      <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8" slot="header">
+        <h1 class="text-lg/6 font-semibold text-gray-900">Dashboard</h1>
+      </div>
+      <v-empty-placeholder class="w-full p-4"></v-empty-placeholder>
+    </v-stacked-layout>
   </body>
 </html>
