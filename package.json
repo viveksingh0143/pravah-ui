@@ -4,13 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "npm run tailwind:watch & vite",
+    "build": "npm run tailwind:build && tsc && vite build",
+    "move-assets": "mv ./dist/assets/index-bundle.js ~/development/mb/moviebuddy/priv/static/assets/web-components.js && mv ./dist/assets/index-styles.css ~/development/mb/moviebuddy/priv/static/assets/web-components.css",
     "preview": "vite preview",
     "serve-dist": "http-server dist --proxy http://localhost:8080? -o",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_31d3863835ac6a9"
+    "chromatic": "npx chromatic --project-token=chpt_31d3863835ac6a9",
+    "tailwind:watch": "npx @tailwindcss/cli -i ./src/styles/tailwind.css -o ./src/styles/tailwind-compiled.css --watch",
+    "tailwind:build": "npx @tailwindcss/cli -i ./src/styles/tailwind.css -o ./src/styles/tailwind-compiled.css --minify",
+    "lint": "prettier --write .",
+    "clean": "rm -rf dist && rm -rf node_modules/.vite && rm -rf src/styles/tailwind-compiled.css"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.5",
