@@ -5,7 +5,7 @@ import { customElement, property } from 'lit/decorators.js';
 export class StarRating extends LitElement {
   @property({ type: Number }) rating = 0;
   @property({ type: Number }) maxRating = 5;
-  @property({ type: String }) starStyle = 'color: #efb100';
+  @property({ type: String, attribute: "star-style" }) starStyle = 'color: #efb100';
   @property({ type: String }) size = 'w-6';
 
   static styles = css`
